@@ -1,0 +1,22 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Raleway;
+}
+
+#cont {
+  background-color: #625F5C;
+  height: 40px;
+  widows: 100%;
+  color: #fff;
+  font-size:20px;
+}
+
+#img1 {
+  background-image: url("../img/header.jpg");
+  height: 517px;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  background-size: cover;
+}
