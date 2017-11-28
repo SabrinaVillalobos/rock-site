@@ -1,4 +1,5 @@
-* { /*normaliza cuerpo*/
+* {
+  /*normaliza cuerpo*/
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -18,10 +19,10 @@
   float: left;
   font-weight: bold;
   cursor: pointer;
-  color:#fff;
+  color: #fff;
 }
 a:hover {
-  color:#fff;
+  color: #fff;
 }
 li {
   float: right;
@@ -34,9 +35,8 @@ li {
 a {
   text-decoration: none;
   cursor: pointer;
-  color:#8F9296;
+  color: #8F9296;
 }
-
 #img1 {
   background-image: url("../img/header.jpg");
   background-size: cover;
@@ -45,55 +45,51 @@ a {
   background-attachment: scroll;
   background-size: 100% 100%;
 }
-
 p.onepage {
   font-size: 90px;
   text-align: center;
   color: white;
   padding-top: 110px;
   font-weight: 300;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px #DBDBDB;
 }
-
 .fa-bars {
   float: right;
   cursor: pointer;
+  color: #95989B;
 }
-
 .fa-bars:before {
   line-height: 37px;
 }
-
 .willrock {
   text-align: center;
-  font-size:50px;
-  color:#fff;
+  font-size: 50px;
+  color: #fff;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px #DBDBDB;
 }
-.forthose{
+.forthose {
   color#000;
   font-size: 40px;
   padding-top: 85px;
 }
 .ftx {
-  color:#000;
+  color: #000;
 }
-
-#imgs1{
+#imgs1 {
   background-image: url("../img/rock1.jpg");
   background-repeat: no-repeat;
   border-radius: 50%;
   height: 450px;
   margin-left: 50px;
 }
-
-#imgs2{
+#imgs2 {
   background-image: url("../img/rock3.jpg");
   background-repeat: no-repeat;
   border-radius: 50%;
   height: 450px;
   margin-right: 50px;
 }
-
-#imgs3{
+#imgs3 {
   background-image: url("../img/rock2.jpg");
   background-repeat: no-repeat;
   border-radius: 50%;
@@ -111,28 +107,51 @@ p.onepage {
   color: #fff;
   font-weight: 400;
 }
-
-@media (max-width: 575px) { /*breakpoint, desaparece menu, aparece el de hamburguesa y cambia la imagen baner a una de 920x400*/
-  li {
-    display: none;
-    }
-    #img1 {
-      background-image: url("../img/smllhand.jpg");
-    }
-    .imgs1,
-    .imgs2,
-    .imgs3 {
-      margin-left: auto;
-      margin-right: auto;
-      background-size: cover;
-    }
+.nnc {
+  line-height: 37px;
+  font-weight: bold;
+  color: #95989B;
 }
-@media (min-width: 576px) {/*breakpoint, pantallas grandes no muestran menu de hamburguesa*/
+@media (min-width: 576px) {
+  /*breakpoint, pantallas grandes no muestran menu de hamburguesa*/
+  
   .nnc {
     display: none;
-  }
-  i.fa.fa-bars {
-    display: none;
-  }
+    }
+    i.fa.fa-bars {
+      display: none;
+    }
+}
+@media (max-width: 575px) {
+  /*breakpoint, desaparece menu, aparece el de hamburguesa y cambia la imagen baner a una de 920x400*/
+li {
+  display: none;
+}
+#img1 {
+  background-image: url("../img/smllhand.jpg");
+}
+#imgs1,
+#imgs2,
+#imgs3 {
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  height: 300px;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+p.onepage {
+  font-size: 80px;
+  padding: 0;
+}
+.willrock {
+  font-size: 40px;
+}
 }
 
+@media (max-width: 568px) {
+  p.onepage {
+    font-size: 85px;
+    line-height: 102px;
+  }
+}
